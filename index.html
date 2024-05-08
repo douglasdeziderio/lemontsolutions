@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="carrousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="carrousel/owl.theme.default.min.css">
+    <title>LemonT - Solução Tecnológica</title>
+</head>
+
+<body>
+    <header>
+        <section class="topo">
+            <div>
+                <a href="/index.html"><img class="logo" src="/assets/logo.svg"></a>
+            </div>
+    
+            <div>
+                <div class="hidden-bt">
+                    <a id="bt" class="bi bi-list" ></a>
+                </div>
+
+                <ul class="menu hidden" id="menu">
+                    <li>
+                        <a class="menu-texto" href="/index.html">
+                            Início
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="menu-texto" href="/who/who.html">
+                            Quem somos
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="menu-bt" href="tel:+55 21 99288-4269">
+                            (21) 99288-4269
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="pri">
+            <div class="pri-div">
+                <img src="/assets/logo.svg" width="300px">
+
+                <h1 class="pri-titulo">
+                    Lemont Solutions
+                </h1>
+
+                <h2 class="pri-subtitulo">
+                    Não tenha mais dor de cabeça com tecnologia, deixa que a gente cuida para você!
+                </h2>
+
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5521980091573">
+                        <button class="pri-bt">
+                            Contate-nos
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec">
+            <div class="sec-div">
+                <div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/1d05e8ef-13e4-40e2-92eb-6faa4615de9e/QkSVCbaZdV.json" z-index="1" background="transparent" speed="0.5" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+                </div>
+
+                <div>
+                    <p class="sec-text">
+                        Suporte técnico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sec-div">
+                <div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/50fb03ef-3355-4f90-a985-5bd61f58af1f/ZvfboTgPin.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+                </div>
+
+                <div>
+                    <p class="sec-text">
+                        Desenvolvimento de sites e programação de aplicativos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sec-div">
+                <div>
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/05204c1c-b445-4731-b290-f9e590bafc08/ISnmHSxkyq.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+                </div>
+
+                <div>
+                    <p class="sec-text">
+                        Serviços e soluções de análise de dados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tec">
+            <div>
+                <p class="tec-texto">Siga-nos no Instagram</p>
+            </div>
+
+            <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag"></div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="rodape-rodape">
+                <div class="rodape-div">
+                    <p class="rodape-titulo">
+                        Contato
+                    </p>
+        
+                    <p class="rodape-texto">
+                        Email: lemontsolutions@gmail.com
+                    </p>
+                </div>
+
+                <div class="rodape-icon">
+                    <a href="https://www.instagram.com/lemontsolutions/" class="bi bi-instagram"></a>
+                    <a href="https://wa.me/5521992884269" class="bi bi-whatsapp"></a>
+                </div>
+            </div>
+    
+            <div>
+                <p class="rodape-copy">
+                    © 2022 por Douglas Deziderio - DEV.
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="insta/jquery.min.js"></script>
+    <script src="insta/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="insta/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+        accessToken: 'IGQWRQcjZAyOUVWS18zUV81QXhkTjFSRHBHY0U4V2twWFMxeklqTVJ4QTFxckxoTzJvaUJVZAUtzZAkVRUWRweTh3a3p3ZA1dabklnS2pCSzhQMktUdEl3ekl3TWkyWk5mS3Q3ZAG8yZAGZAqbU9IUmE3U01yTDJKNkVIOEEZD',
+        limit: 5,
+        template: '<div class="carrosel"><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>',
+        after: function(){
+            $('.owl-carousel').owlCarousel({
+                autoplay:true,
+                loop:true,
+                margin:10,
+                nav:false,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                    },
+                    600:{
+                        items:3,
+                    },
+                    1000:{
+                        items:5,
+                    }
+                }
+            })
+        }
+        });
+    feed.run();
+</script>
+</body>
+</html>

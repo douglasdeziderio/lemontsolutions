@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-pri: #000626;
+    --cor-sec: #a6fd34;
+    --cor-tec: #fdde2b;
+    --bolha-pri: #eaffff;
+    --bolha-pri-fun: #4bbcdc;
+    --bolha-sec: #ffe1ff;
+    --bolha-sec-fun: #c762a6;
+    --font-pri: "Poppins", sans-serif;
+}
+
+.topo{
+    padding: 0.1%;
+    background-color: var(--cor-pri);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-decoration: none;
+}
+
+.menu-texto{
+    font-family: var(--font-pri);
+    font-size: 100;
+    font-weight: 700;
+    color: var(--cor-sec);
+    text-decoration: none;
+}
+
+.menu-texto:hover{
+    color: var(--cor-tec);
+}
+
+.menu-bt{
+    padding: 5px;
+    background-color: var(--cor-pri);
+    font-family: var(--font-pri);
+    font-size: 100;
+    font-weight: 700;
+    color: var(--cor-sec);
+    border: #6dde01 solid 3px;
+    border-radius: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.menu-bt:hover{
+    cursor: pointer;
+    background-color: var(--cor-sec);
+    color: var(--cor-pri);
+}
+
+.hidden-bt{
+    display: none;
+}
+
+.who{
+    background-color: #000;
+    padding: 5em 10em;
+    border-top: 10px solid var(--cor-sec);
+    border-bottom: 10px solid var(--cor-sec);
+}
+
+.who-div{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 10px double var(--cor-tec);
+    border-radius: 50px;
+}
+
+.who-img{
+    width: 50em;
+}
+
+.who-div-div{
+    padding-right: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-titulo{
+    font-family: var(--font-pri);
+    font-size: 50px;
+}
+
+.who-texto{
+    font-family: var(--font-pri);
+    font-size: 20px;
+}
+
+.rodape{
+    padding: 30px 0;
+    background-color: var(--cor-pri);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+}
+
+.rodape-rodape{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape-titulo{
+    font-family: var(--font-pri);
+    font-size: 30px;
+}
+
+.rodape-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape-texto{
+    font-family: var(--font-pri);
+    font-size: 20px;
+}
+
+.rodape-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a.bi-instagram, a.bi-whatsapp{
+    color: #fff;
+    font-size: 30px;
+}
+
+.rodape-copy{
+    font-family: var(--font-pri);
+}
+
+@media (max-width: 1000px) {
+    .menu{
+        background-color: var(--cor-pri);
+        position: absolute;
+        z-index: 1;
+        top: 6.3%;
+        left: 50%;
+        width: 50%;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 0 30px;
+    }
+
+    .menu-bt{
+        padding: 5px;
+        background-color: none;
+        font-family: var(--font-pri);
+        font-size: 100;
+        font-weight: 700;
+        color: var(--cor-sec);
+        border: none;
+        border-radius: 0;
+    }
+
+    a.bi-list, a.bi-x-lg{
+        color: #fff;
+        font-size: 3em;
+    }
+
+    .hidden-bt{
+        display: flex;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .who{
+        background-color: #000;
+        padding: 5em 0em;
+        border-top: 10px solid var(--cor-sec);
+        border-bottom: 10px solid var(--cor-sec);
+    }
+
+    .who-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 10px double var(--cor-tec);
+        border-radius: 50px;
+    }
+
+    .who-img{
+        width: 23em;
+    }
+
+    .who-div-div{
+        padding: 0 2em 3em 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .who-titulo{
+        font-size: 40px;
+    }
+
+    .rodape-texto{
+        font-size: 17px;
+    }
+    
+    .rodape-copy{
+        font-size: 13px;
+    }
+}
